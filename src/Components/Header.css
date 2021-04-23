@@ -1,0 +1,203 @@
+.humburger_overlay {
+    display: none;
+}
+.mobile_header {
+    display: none;
+}
+.upperheader {
+    padding: 20px 0 7px;
+    background: #fff;
+    text-align: center;
+}
+.logo {
+    display: inline-block;
+    height: 76px;
+    width: 267px;
+}
+.bottomheader {
+    background: #f6f6f6;
+}
+.menu a,
+.menu a:hover {
+    display: inline-block;
+    padding: 17px 12px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+    font-family: Georgia;
+    margin-right: 24px;
+    text-decoration: none;
+    position: relative;
+}
+.activeNavMenu::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 4px;
+    background: #b30010;
+}
+.menu a:hover:last-child,
+.menu a:last-child {
+    margin-right: 0;
+}
+.searchicon {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    cursor: pointer;
+}
+.follow_us {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.follow_us a,
+.follow_us label {
+    display: inline-block;
+    vertical-align: middle;
+}
+.follow_us label {
+    font-size: 16px;
+    font-family: Georgia;
+    font-weight: 400;
+    color: #000;
+    margin-right: 23px;
+}
+.follow_us a {
+    margin-right: 38px;
+}
+.follow_us a:last-child {
+    margin-right: 0;
+}
+.strickylogo {
+    width: 152px;
+    height: 42px;
+    margin-right: 36px;
+    margin-top: 8px;
+    display: none;
+}
+.fixed {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    background: #f6f6f6;
+}
+.fixed .strickylogo {
+    display: block;
+}
+
+
+/* small add & read component*/
+/* small ad */
+.add_box {
+    margin: 0 0 20px;
+    min-height: 250px;
+}
+
+/* read component */
+h4 {
+    font-size: 20px;
+    color: #000;
+    font-family: Georgia;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 18px;
+}
+.right_card {
+    margin: 0 0 26px;
+}
+.right_card figure {
+    margin: 0 0 5px;
+}
+.right_card p {
+    font-size: 18px;
+    color: #000;
+    font-family: Georgia;
+    font-weight: 400;
+    line-height: 24px;
+}
+@media only screen and (max-width:992px){
+            .right_card {
+                margin: 0 0 15px;
+            }
+            .right_card p {
+    font-size: 16px;
+}
+}
+@media only screen and (max-width:767px){
+    .right_card {
+        margin: 0 0 24px;
+    } 
+    .right_card figure {
+    text-align: center;
+    margin: 0 0 10px;
+}
+.right_card p {
+    font-size: 18px;
+    line-height: 24px;
+}
+}
+
+
+/* wrapper CelebrityList */
+.content_wrapper {
+    padding-bottom: 65px;
+}
+.content_inner {
+    display: flex;
+    justify-content: space-between;
+}
+.content_left {
+    width: calc(100% - 325px);
+}
+.content_right {
+    width: 300px;
+}
+@media only screen and (max-width:767px){
+    .content_wrapper {
+    padding-bottom: 32px;
+}
+
+.content_inner {
+    display: block;
+}
+.content_left {
+    width: 100%;
+    margin: 0 0 29px;
+}
+.content_right {
+    width: 300px;
+    margin: 0 auto;
+}
+}
+
+/* Navigation Section */
+
+.nevigation_section {
+    padding: 20px 0 26px;
+}
+
+.nevigation_section a, .nevigation_section span {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 7px;
+}
+.nevigation_section a {
+    font-size: 16px;
+    color: #000;
+    font-family: Georgia;
+    font-weight: 400;
+    text-decoration: none;
+}
+.nevigation_section a.active {
+    color: #b30010;
+}

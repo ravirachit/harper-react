@@ -1,0 +1,331 @@
+
+/* Heading Title */
+.tittle_text {
+    font-family: Georgia;
+    font-style: italic;
+    color: #000;
+    font-size: 72px;
+    font-weight: 400;
+    text-transform: uppercase;
+    position: relative;
+    margin: 0 0 22px;
+    padding-left: 109px;
+}
+.tittle_text span {
+    background: #fff;
+    position: relative;
+    display: inline-block;
+    z-index: 99;
+}
+.tittle_text::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #000;
+}
+
+@media only screen and (max-width:767px){
+    .tittle_text {
+    font-size: 35px;
+    margin: 0 0 14px;
+    padding-left: 17px;
+}
+}
+
+/* Ad component stylesheet */
+.add_wrapper {
+    height: 90px;
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 36px;
+}
+@media only screen and (max-width:767px){
+    .add_wrapper {
+    height: 250px;
+    width: 300px;
+    margin: 14px auto 0;
+}
+.add_wrapper img {
+    width: 100%;
+    height: 100%;
+}
+}
+
+
+
+/* Footer Component */
+.bottom_footer {
+    background-color:#000;
+    text-align:center;
+    padding:15px 0
+   }
+   .bottom_footer span {
+    font-size:13px;
+    color:#fff;
+    font-weight:400;
+    display:inline-block;
+    font-family:Georgia;
+    line-height:17px
+   }
+   .top_footer {
+    padding:24px 0 22px;
+    background-color:#f6f6f6
+   }
+   .footer_logo_right {
+    float:right;
+    padding-right:77px
+   }
+   .footer_logo {
+    padding:0 5px 20px;
+    margin:0 0 12px;
+    display:inline-block;
+    border-bottom:1px solid #ddd
+   }
+   .footer_follow_us a,
+   .footer_follow_us label {
+    display:inline-block;
+    vertical-align:middle
+   }
+   .footer_follow_us label {
+    margin-right:32px;
+    color:#9d9d9d;
+    font-family:Georgia;
+    font-weight:400;
+    font-size:16px
+   }
+   .footer_follow_us a {
+    margin-right:45px
+   }
+   .footer_follow_us a:last-child {
+    margin-right:0
+   }
+   .top_footer h4 {
+    font-size:14px;
+    color:#000;
+    font-weight:700;
+    font-family:Georgia;
+    text-transform:uppercase;
+    margin:0 0 18px
+   }
+   .quick_menu {
+    float:left;
+    margin-left:50px;
+    width:230px
+   }
+   .our_site {
+    width:auto
+   }
+   .footer_menu {
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap
+   }
+   .our_site_menu {
+    padding-right:34px;
+    margin-right:46px;
+    border-right:1px solid #ddd
+   }
+   .our_site .footer_menu {
+    display:block
+   }
+   .footer_menu li {
+    margin-bottom:15px;
+    width:50%
+   }
+   .footer_menu li a,
+   .footer_menu li a:hover {
+    font-size:14px;
+    display:inline-block;
+    color:#000;
+    font-weight:400;
+    font-family:Georgia;
+    text-decoration:none
+   }
+   .our_site .footer_menu li {
+    width:100%
+   }
+   @media only screen and (max-width:1291px) {
+    .quick_menu {
+     margin-left:30px
+    }
+    .footer_logo_right {
+     padding-right:30px
+    }
+    .footer_logo {
+     width:300px
+    }
+   }
+   @media only screen and (max-width:992px) {
+    .quick_menu {
+     margin-left:0;
+     width:190px
+    }
+    .footer_logo_right {
+     padding-right:0
+    }
+    .our_site_menu {
+     padding-right:20px;
+     margin-right:20px
+    }
+    .our_site {
+     margin-left:20px;
+     width:auto
+    }
+    .footer_logo {
+     width:230px
+    }
+    .footer_follow_us a {
+     margin-right:15px
+    }
+    .footer_follow_us label {
+     margin-right:10px
+    }
+   }
+   @media only screen and (max-width:767px) {
+    .quick_menu {
+     margin:0 0 10px;
+     width:100%;
+     float:none
+    }
+    .our_site {
+     margin-left:0;
+     width:100%
+    }
+    .our_site_menu {
+     padding-right:0;
+     margin-right:0;
+     width:100%;
+     border-right:none
+    }
+    .our_site_menu_right {
+     width:100%
+    }
+    .our_site .flex_wrap {
+     flex-wrap:wrap
+    }
+    .our_site .footer_menu {
+     display:flex;
+     padding:0 0 15px
+    }
+    .our_site .footer_menu li {
+     width:50%;
+     margin:0 0 19px
+    }
+    .footer_logo {
+     display:none
+    }
+    .footer_logo_right {
+     float:none
+    }
+    .footer_menu {
+     padding:0 0 15px
+    }
+    .footer_follow_us label {
+     margin:0 0 10px;
+     display:block;
+     text-align:center
+    }
+    .footer_follow_us {
+     text-align:center;
+     padding-top:8px;
+     border-top:1px solid #ddd
+    }
+    .top_footer {
+     padding:15px 0 20px
+    }
+    .bottom_footer span {
+     font-size:12px
+    }
+    .footer_follow_us label {
+     margin:0 0 17px;
+     font-size:16px
+    }
+    .bottom_footer {
+     padding:10px 0
+    }
+    .footer_follow_us a {
+     margin:0 20px
+    }
+    .top_footer h4 {
+     margin:0 0 20px
+    }
+   }
+
+
+/* Add Section */
+.add_wrapper {
+    height: 90px;
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 36px;
+}
+@media only screen and (max-width:767px){
+    .add_wrapper {
+    height: 250px;
+    width: 300px;
+    margin: 14px auto 0;
+}
+.add_wrapper img {
+    width: 100%;
+    height: 100%;
+}
+}
+
+
+/* top heading */
+.author_head {
+    padding: 0 0 30px;
+    margin: 0 0 40px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+}
+.author_head h2 {
+    font-size: 20px;
+    color: #000;
+    font-family: Georgia;
+    font-weight: 700;
+    margin: 0;
+}
+.update_tab {
+    border: 1px solid #000;
+}
+.update_tab a {
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 16px;
+    color: #000;
+    width: 80px;
+    font-family: Georgia;
+    font-weight: 700;
+    text-align: center;
+    line-height: 25px;
+}
+.update_tab a.active {
+    background-color: #000;
+    color: #fff;
+}
+
+@media only screen and (max-width:767px){
+    .author_head {
+    flex-wrap: wrap;
+    margin: 0 0 25px;
+}
+.author_head h2 {
+    font-size: 20px;
+    margin: 0 0 22px;
+    width: 100%;
+}
+}
+
